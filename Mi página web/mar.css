@@ -1,0 +1,333 @@
+body
+{
+    margin: 2;
+    padding: 0%;
+    line-height: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(marianita.png);
+    background-repeat: no-repeat;
+    /*background-position: 50px 25px;*/
+    background-position: top left;
+    /*height: 1800px;*/
+    background-attachment: fixed;
+    /*por la linea de arriba no se mueve papus*/
+    background-size: 100% 100%;
+}
+.titulo span
+{
+    font-size: 120px;
+    font-weight: bold;
+    position: relative;
+    font-family: "Fredoka One";
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.titulo span::before
+{
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(15px);
+}
+.titulo sapn::after
+{
+    content: var(--l);
+    position: absolute;
+    top: 80%;
+    left: 0;
+    filter: blur(30px);
+    transform: rotateX(50deg);
+}
+.titulo span:hover
+{
+    filter: contrast(250%);
+}
+.titulo span:nth-child(1)
+{
+    color: #00bef8;
+}
+.titulo span:nth-child(2)
+{
+    color: #ff0697;
+}
+.titulo span:nth-child(3)
+{
+    color: #ff4d00;
+}
+.titulo span:nth-child(4)
+{
+    color: #ffe600;
+}
+.titulo span:nth-child(5)
+{
+    color: #bb00ff;
+}
+.titulo span:nth-child(6)
+{
+    color: rgb(76, 187, 76);
+}
+.titulo span:nth-child(7)
+{
+    color: #00bef8;
+}.titulo span:nth-child(8)
+{
+    color: #ff0697;
+}.titulo span:nth-child(9)
+{
+    color: #ff4d00;
+}.titulo span:nth-child(10)
+{
+    color: #ffe600;
+}
+.sub
+{
+    font-size: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+.gay
+{
+    position: relative;
+    margin: 0% auto 0;
+    width: 700px;
+    height: 500px;
+    background: linear-gradient(90deg, #000, #323232);
+}
+.gay::before, .gay::after
+{
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    background: linear-gradient(120deg,rgb(76, 187, 76), #bb00ff,#00bef8,#ff4d00,#ff0697,#ffe600,#ff4d00,#FC2929,#8629Fc);
+    background-size: 300%;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    z-index: -1;
+    animation: BGgrandient 15s ease infinite;
+}
+/*APRENDIDO EN UN TUTO DE YOUTUBE*/
+@keyframes BGgrandient 
+{
+    0%
+    {
+        background-position: 0% 200%;
+    }
+    50%
+    {
+        background-position: 200% 0%;
+    }
+    100%
+    {
+        background-position: 0% 330%;
+    }
+}
+.gay::after
+{
+    filter: brightness(1);
+    filter: drop-shadow(16px 16px 20px rgb(248,220,97));
+    filter: blur(15px);
+}
+h3
+{
+    font-size: 45px;
+    text-align: center;
+    color: #fff;
+}
+h4
+{
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+}
+.postre
+{
+    position: relative;
+    margin: 1% auto 0;
+    width: 70%;
+    height: 190px;
+    background: linear-gradient(90deg,rgb(235, 98, 182),rgb(207, 172, 228));
+}
+.postre p
+{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+.peli
+{
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: top;
+    background: #ebafe8;
+    padding: 15px;
+    height: 400px;
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px;
+    text-align: center;
+}
+.peli h2
+{
+    color: rgb(255, 0, 157);
+}
+.peli p
+{
+    font-size: 15px;
+    line-height: 1.0;
+    
+}
+.peli::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: rgb(203, 144, 236);
+
+}
+.peli::-webkit-scrollbar-thumb
+{
+    background: #ad46c9;
+}
+h5
+{
+    font-size: 45px;
+    text-align: center;
+    color: #fff;
+}
+.comidas
+{
+    margin: 5%;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+.temas
+{
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: top;
+    background: #ebafe8;
+    padding: 15px;
+    height: 500px;
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px;
+    text-align: center;
+}
+.temas p
+{
+    font-size: 40px;
+    line-height: 1.0;
+    color: #fff;
+}
+.temas ol
+{
+    font-size: 40px;
+    line-height: 1.0;
+    color: #fff;
+}
+.temas::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: rgb(203, 144, 236);
+
+}
+.temas::-webkit-scrollbar-thumb
+{
+    background: #ad46c9;
+}
+.stan
+{
+    width: 300px;
+    /*ancho*/
+    height: 310px;
+    /*alto*/
+    margin: 100px;
+    position: relative;
+    filter: drop-shadow(0 0 4px);
+}
+.stan::before
+{
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #d11c40;
+}
+.head
+{
+    width: 100%;
+    /*ocupara todo el contenerdor padre que es de 300px*/
+    height: 100%;
+    background-color: #fddbb6;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.cap
+{
+    width: 100%;
+    height: 35%;
+    background-color: #5164a3;
+    position: relative;
+}
+.cap::before
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-color: #d11c40;
+    bottom: -10px;
+}
+.eye
+{
+    position: absolute;
+    top: 128px;
+    left: 69px;
+    width: 80px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: rotate(31deg);
+}
+.eye-r
+{
+    left: initial;
+    right: 69px;
+    transform: rotate(-21deg);
+}
+.eye-r::before
+{
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: -30px;
+    width: 15px;
+    height: 15px;
+    background-color:#000;
+    border-radius: 50%;
+    box-shadow: 48px 20px;
+}
+.mouth
+{
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    width: 70px;
+    height: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 70px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 50%;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+}
